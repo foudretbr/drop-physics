@@ -1,0 +1,27 @@
+id = "horizon_physics"
+name = "Horizon Physics"
+version = "1.0.0"
+description = "Physics for dropped items: they tumble while they fly and settle on their flattest side, with no bobbing or spinning."
+authors = ["foudretbr"]
+license = "MIT"
+api = "0.2"
+side = "client"
+capabilities = ["registries"]
+
+[native]
+game = "26.3"
+horizon = "0a875da91dbb0fdcb7ba8c42c11341aa229af51a"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"
+
+[[native.mixin]]
+id = "items"
+kind = "OVERWRITE"
+target = "horizon_client::game::item_draw::Game<'_>::dropped_item_geometry"
+helper = "src/mixins/items.rs"
+bindings = [
+  { name = "game", ty = "&crate::game::Game<'_>", value = "&*self" },
+  { name = "camera", ty = "glam::DVec3", value = "camera" },
+  { name = "alpha", ty = "f64", value = "alpha" },
+  { name = "out", ty = "&mut Vec<Vertex>", value = "&mut *out" },
+]
+
