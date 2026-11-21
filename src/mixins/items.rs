@@ -1,3 +1,5 @@
+// Adapted from Horizon's item_draw.rs (dropped_item_geometry / item_entity_geometry), https://github.com/horizon-rust/horizon,
+// GNU LGPL version 3 or later. This file is distributed under the same licence; see NOTICE.md.
 fn drop_physics_items(game: &crate::game::Game<'_>, camera: glam::DVec3, alpha: f64, out: &mut Vec<Vertex>) {
     mod_drop_physics::runtime::begin_frame();
     let items = game.dropped.iter().map(|item| {

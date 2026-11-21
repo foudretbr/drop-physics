@@ -1,9 +1,9 @@
 id = "drop_physics"
 name = "Drop Physics"
-version = "1.0.0"
+version = "1.0.1"
 description = "Physics for dropped items: they tumble while they fly and settle on their flattest side, with no bobbing or spinning."
 authors = ["foudretbr"]
-license = "MIT"
+license = "LGPL-3.0-or-later"
 api = "0.2"
 side = "client"
 capabilities = ["registries"]
