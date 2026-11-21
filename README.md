@@ -1,4 +1,4 @@
-# Horizon Physics
+# Drop Physics
 
 A native mod for [Horizon](https://playhorizon.dev) that gives dropped items some physics.
 
@@ -18,3 +18,4 @@ The game's own item drawing code, which the mod follows, is Horizon's.
 ## Licence
 
 MIT, see `LICENSE`.
+

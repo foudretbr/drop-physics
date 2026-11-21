@@ -1,5 +1,5 @@
-id = "horizon_physics"
-name = "Horizon Physics"
+id = "drop_physics"
+name = "Drop Physics"
 version = "1.0.0"
 description = "Physics for dropped items: they tumble while they fly and settle on their flattest side, with no bobbing or spinning."
 authors = ["foudretbr"]
@@ -24,4 +24,5 @@ bindings = [
   { name = "alpha", ty = "f64", value = "alpha" },
   { name = "out", ty = "&mut Vec<Vertex>", value = "&mut *out" },
 ]
+
 

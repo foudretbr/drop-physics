@@ -1,5 +1,5 @@
-fn horizon_physics_items(game: &crate::game::Game<'_>, camera: glam::DVec3, alpha: f64, out: &mut Vec<Vertex>) {
-    mod_horizon_physics::runtime::begin_frame();
+fn drop_physics_items(game: &crate::game::Game<'_>, camera: glam::DVec3, alpha: f64, out: &mut Vec<Vertex>) {
+    mod_drop_physics::runtime::begin_frame();
     let items = game.dropped.iter().map(|item| {
         let (p, q) = (item.previous, item.position);
         let at = [
@@ -68,7 +68,7 @@ fn horizon_physics_items(game: &crate::game::Game<'_>, camera: glam::DVec3, alph
             ];
             let resting = item.on_ground
                 || ((now.y - prev.y).abs() < 1.0e-4 && item.velocity.y.abs() < 1.0e-3);
-            let r = mod_horizon_physics::runtime::rotation(item.id, resting, velocity, flat);
+            let r = mod_drop_physics::runtime::rotation(item.id, resting, velocity, flat);
             let rot = glam::Quat::from_xyzw(r[0], r[1], r[2], r[3]);
             let center = (lo + hi) * 0.5;
             let half = (hi - lo) * 0.5;
@@ -154,6 +154,7 @@ fn horizon_physics_items(game: &crate::game::Game<'_>, camera: glam::DVec3, alph
                 game.cull_skinned(out, entity_start, skinned);
             }
         }
-    mod_horizon_physics::runtime::end_frame();
+    mod_drop_physics::runtime::end_frame();
 }
+
 

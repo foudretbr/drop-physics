@@ -1,9 +1,10 @@
 [package]
-name = "mod-horizon_physics"
+name = "mod-drop_physics"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
 horizon-mod-api = { path = ".horizon/sdk/api/crates/horizon-mod-api" }
+
 
 
