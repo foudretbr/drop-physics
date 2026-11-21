@@ -17,5 +17,5 @@ The game's own item drawing code, which the mod follows, is Horizon's.
 
 ## Licence
 
-GNU LGPL version 3 or later, like Horizon, whose item-drawing code this mod adapts. See `LICENSE`, `LICENSES/` and `NOTICE.md` for the full notices, including the MIT notice of Horizon Physics.
+GNU LGPL version 3 or later, like Horizon, whose item-drawing code this mod adapts. See `LICENSE`, `COPYING` and `NOTICE.md` for the full notices, including the MIT notice of Horizon Physics.
 
