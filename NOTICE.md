@@ -3,7 +3,7 @@
 Drop Physics is licensed under the GNU Lesser General Public License, version 3 or later (see `LICENSE`, which
 adds permissions to the GNU General Public License version 3, in `COPYING`).
 
-## Horizon
+## Horizon (LGPL-3.0-or-later)
 
 `src/mixins/items.rs` reproduces and adapts the body of Horizon's dropped-item drawing, `dropped_item_geometry`
 and `item_entity_geometry` in `crates/horizon-client/src/game/interface/item_draw.rs`, at
@@ -13,24 +13,12 @@ and its contributors). Drop Physics is a modified version of that code and is th
 licence. Its changes: the item pose (tumbling in flight, settling on the flattest side), in `items.rs` and
 `runtime.rs`.
 
-## Horizon Physics (MIT)
+## Horizon Physics by tariksabanuz (MIT)
 
-The approach follows Horizon Physics by tariksabanuz (https://github.com/tariksabanuz/PhysicsModHorizon), under the
-MIT License with this notice. The full MIT text is at the end of this file.
-
-Copyright (c) 2026 tariksabanuz
-
-## Author
-
-Copyright (c) 2026 foudretbr
-
-## MIT License text (Horizon Physics)
-Horizon was released under the MIT licence until it moved to the GNU LGPL (see LICENSE).
-Code merged before that change stays available under these terms:
-
+The approach follows Horizon Physics (https://github.com/tariksabanuz/PhysicsModHorizon). Its licence, verbatim:
 MIT License
 
-Copyright (c) 2026 Ludovic Marie and the Horizon contributors
+Copyright (c) 2026 tariksabanuz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -50,3 +38,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+## Drop Physics
+
+Copyright (c) 2026 foudretbr
